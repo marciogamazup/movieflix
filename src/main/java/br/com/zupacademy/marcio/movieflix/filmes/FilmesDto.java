@@ -15,6 +15,10 @@ public class FilmesDto {
         this.nome = nome;
     }
 
+    public FilmesDto(Filmes entity){
+        this.nome = entity.getNome();
+    }
+
     public String getNome() {
         return nome;
     }
